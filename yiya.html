@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh; /* Full viewport height */
+        }
+
+        .login-container {
+            display: flex;
+            height: 100%; /* Full height of the page */
+        }
+
+        /* Style for the left side with an image */
+        .image-side {
+            flex: 1; /* Take half the space */
+            background-image: url('https://i.pinimg.com/564x/b9/2c/55/b92c5560709fc3b68a9c82873804a3a4.jpg'); /* Example background image */
+            background-size: cover;
+            background-position: center;
+        }
+
+        /* Style for the right side with the form */
+        .form-side {
+            flex: 1; /* Take half the space */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9); /* Slight transparency for blending */
+        }
+
+        .login-form {
+            width: 80%; /* Make the form wider */
+            background: white;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .login-form .form-control {
+            margin-bottom: 1rem;
+        }
+
+        .social-login {
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        .social-login button {
+            margin: 0.5rem; /* Add some spacing between buttons */
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <!-- Side with image -->
+        <div class="image-side">
+            <!-- The image side is intentionally left empty -->
+        </div>
+
+        <!-- Side with form -->
+        <div class="form-side">
+            <div class="login-form">
+                <h2 class="text-center">Login</h2>
+                <form>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" placeholder="Enter your password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="rememberMe">
+                        <label class="form-check-label" for="rememberMe">Remember me</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block">Login</button>
+                </form>
+                <hr>
+                <p class="text-center">Or sign in with</p>
+                <div class="social-login">
+                    <button class="btn btn-danger">Google</button>  <!-- Google sign-in button -->
+                    <button class="btn btn-secondary">GitHub</button>  <!-- GitHub sign-in button -->
+                    <button class="btn btn-info">Phone</button>  <!-- Phone sign-in button -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
